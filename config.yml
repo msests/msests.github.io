@@ -1,0 +1,4 @@
+deploy:
+  type: git
+  repository: git@github.com:msests/msests.github.io.git
+  branch: v4
