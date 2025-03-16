@@ -1,0 +1,16 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - v4
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npx quartz build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages  # 部署到的分支
+          folder: public     # 构建后的文件夹
