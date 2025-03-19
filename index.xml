@@ -6,65 +6,65 @@
       <description>Last 10 notes on Quartz 4</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>词嵌入</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%AF%8D%E5%B5%8C%E5%85%A5</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%AF%8D%E5%B5%8C%E5%85%A5</guid>
-    <description>词嵌入是将自然语言中的词汇映射到低维稠密向量的技术，核心目标是让计算机通过向量空间中的距离（如余弦相似度）理解词语的语义和语法关系。例如，“国王-男人+女人≈女王”可体现向量对语义关系的捕捉。 传统模型（如Word2Vec、GloVe）生成静态词嵌入​（每个词固定为一个向量），而现代模型（如BERT）生成动态词嵌入​（同一词在不同上下文中有不同向量）。词嵌入是NLP的基础技术，广泛应用于机器翻译、情感分析等任务。 静态词嵌入 (Static Word Embedding) 特点 ​固定表示：每个词汇对应一个唯一的向量，与上下文无关。 ​预训练模型：通过大规模语料库预先训练，生成词向量后不可调整...</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>小批量梯度下降</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%BC%98%E5%8C%96/%E5%B0%8F%E6%89%B9%E9%87%8F%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%BC%98%E5%8C%96/%E5%B0%8F%E6%89%B9%E9%87%8F%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D</guid>
+    <description>​原理 小批量梯度下降结合了批量梯度下降（BGD）和随机梯度下降（SGD）的优点： ​BGD：使用整个数据集计算梯度，方向准确但计算开销大。 ​SGD：每次用一个样本更新参数，计算快但噪声大、稳定性差。 Mini-batch每次使用一个小批量（mini-batch）样本计算梯度，平衡效率与稳定性。 ​参数更新 损失函数 J_t(\theta) =\frac{1}{n} \sum_{i=x}^{x+n} L(\theta_t; x^i, \hat {y^i}) n：每一个批次的批量大小。 t：批次。 参数更新 \theta_{t,j} = \theta_{t,j} - \eta \cdot \n...</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>语言模型</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B</guid>
-    <description>1.</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>批量梯度下降</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%BC%98%E5%8C%96/%E6%89%B9%E9%87%8F%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%BC%98%E5%8C%96/%E6%89%B9%E9%87%8F%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D</guid>
+    <description>原理 在深度学习中，批量梯度下降是一种优化算法，用于最小化损失函数J(\theta)，其中\theta代表模型参数。其基本思想是利用整个训练集的梯度来更新模型参数。 参数更新 损失函数 在批量梯度下降时，损失函数为训练集上所有样本的损失值之和除以样本个数： J(\theta) = \frac{1}{n} \sum_{i=0}^n L(\theta; x^i, \hat {y^i}) n：数据集的总大小。 参数更新 为了最小化损失函数J，我们需要根据它的梯度来调整参数 \theta。在批量梯度下降算法中，使用该梯度更新规则迭代地调整参数 \theta_j 直到收敛： \theta_j := \t...</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>FastText</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/FastText</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/FastText</guid>
-    <description>核心思想 FastText的核心思想是利用子词(subword)信息构建词向量。与传统词嵌入模型（如Word2Vec）不同，FastText将每个词表示为其所有子词向量之和，从而更好地处理罕见词、拼写错误和形态丰富的语言。 子词生成方式 ​n-gram子词：对单词生成固定长度（如3-6）的字符级n-gram。 ​边界符号：在单词前后添加&lt;和&gt;符号以区分前缀和后缀。例如，apple变为&lt;apple&gt;，生成3-gram子词：&lt;ap, app, ppl, ple, le&gt;。 ​保留完整词：将整个单词也作为子词之一，确保常见词有独立向量。 随机初始化：每个子词向量都...</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>随机梯度下降</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%BC%98%E5%8C%96/%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E4%BC%98%E5%8C%96/%E9%9A%8F%E6%9C%BA%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D</guid>
+    <description>原理 随机梯度下降（Stochastic Gradient Descent, SGD） 是一种优化算法，它通过逐个样本更新参数，而不是使用整个数据集计算梯度。这样可以大大提高计算效率，尤其是在大规模数据集的情况下。 参数更新 梯度计算 与批量梯度下降（BGD）不同，SGD 在每次迭代中只使用一个样本来计算梯度。对于训练集中的每个样本 (x^{(i)}, y^{(i)})，更新过程如下： 计算该样本的梯度： \nabla_\theta L(h_\theta(x^{(i)}), y^{(i)}) 其中 L 是损失函数，h_\theta(x^{(i)}) 是模型的预测。 在 SGD 中，梯度更新的公...</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>GloVe</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/GloVe</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/GloVe</guid>
-    <description>GloVe 模型笔记 1. 模型简介 GloVe（Global Vectors for Word Representation）是一种结合全局统计信息和局部上下文窗口的词向量学习方法。其核心思想是通过对词共现矩阵进行分解，捕捉词语之间的语义关系。 2.</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>梯度爆炸和消失</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8%E5%92%8C%E6%B6%88%E5%A4%B1</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%A2%AF%E5%BA%A6%E7%88%86%E7%82%B8%E5%92%8C%E6%B6%88%E5%A4%B1</guid>
+    <description>梯度消失（Gradient Vanishing）和梯度爆炸（Gradient Explosion）是深度学习训练中的两大挑战，二者均与梯度在反向传播中的异常行为相关。以下是两者的共同原因、特有原因及解决策略的对比分析： 一、共同原因 1.</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>Word2Vec</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/Word2Vec</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/Word2Vec</guid>
-    <description>核心思想 Word2Vec是一种通过无监督学习获取词汇向量表示的算法，核心假设是分布相似性：语义相似的词会出现在相似的上下文中。其目标是将单词映射到低维稠密向量空间，使得： similarity(w_i, w_j) \approx \vec{v}_{w_i} \cdot \vec{v}_{w_j} 模型架构 CBOW (Continuous Bag-of-Words) 通过上下文预测中心词 目标函数：最大化对数似然 \mathcal{L} = \sum_{t=1}^T \log p(w_t | w_{t-k}, ..., w_{t+k}) 上下文词向量与中心词向量 在 CBOW 模型中，​每个...</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>Dropout</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%AD%A3%E5%88%99%E5%8C%96/Dropout</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%AD%A3%E5%88%99%E5%8C%96/Dropout</guid>
+    <description>定义与核心思想 ​Dropout​ 是一种用于神经网络的正则化技术，由 Hinton 团队在 2012 年提出，旨在减少过拟合。 ​核心思想：在训练阶段，随机”丢弃”（临时关闭）网络中的一部分神经元（通常按概率 p），迫使剩余神经元学习更鲁棒的特征，避免对特定神经元的过度依赖。 ​测试阶段：使用完整的网络结构，但需对权重进行缩放以保持输出的期望值一致。 实现方式 ​训练阶段： 对每个神经元以概率 p（超参数，常用 0.5）决定是否关闭。 关闭的神经元不参与前向传播（传0）和反向传播（传0）。 保留的神经元的输出值需缩放（乘以 1/(1-p)），以保持该层输出的总期望不变，(1-p)E(\fra...</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>哈夫曼编码和负采样优化</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E5%92%8C%E8%B4%9F%E9%87%87%E6%A0%B7%E4%BC%98%E5%8C%96</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E9%9D%99%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81%E5%92%8C%E8%B4%9F%E9%87%87%E6%A0%B7%E4%BC%98%E5%8C%96</guid>
-    <description>利用哈夫曼树优化 核心优化原理 霍夫曼编码在Word2vec的层次Softmax中发挥核心作用，通过构建词频加权的最短路径二叉树，将原始softmax的O(|V|)复杂度降为O(\log |V|)。其优化主要体现在： ​高频词短路径：出现频率高的词位于浅层节点。 ​低频词长路径：低频词分布在深层叶子节点。 ​参数更新局部化：每次只更新路径上的节点参数。 具体实现步骤 霍夫曼树构建 根据语料库词频分布构建二叉树。 合并策略：始终合并当前最小权重的两个节点（最底层的两个叶子节点）。 节点编码规则 \begin{aligned} &amp;\text{left child} \rightarrow ...</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>权重衰减</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%AD%A3%E5%88%99%E5%8C%96/%E6%9D%83%E9%87%8D%E8%A1%B0%E5%87%8F</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E6%AD%A3%E5%88%99%E5%8C%96/%E6%9D%83%E9%87%8D%E8%A1%B0%E5%87%8F</guid>
+    <description>定义与核心思想 权重衰减是一种通过约束模型权重幅度来防止过拟合的正则化方法。其核心在于： ​抑制大权重：在损失函数中增加权重的L2范数惩罚项，迫使模型参数趋向较小值。 ​平滑决策边界：较小的权重通常对应更简单的模型结构，降低对训练数据噪声的敏感度。 数学形式化表达 修正后的损失函数 原始损失函数被改造为： \mathcal{L}_{\text{新}} = \mathcal{L}_{\text{原始}} + \frac{\lambda}{2} \| \mathbf{w} \|^2 其中惩罚项系数\lambda控制正则化强度，\| \mathbf{w} \|^2表示所有权重的平方和。 参数更新动力...</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>随机初始化</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%8F%82%E6%95%B0%E5%88%9D%E5%A7%8B%E5%8C%96/%E9%9A%8F%E6%9C%BA%E5%88%9D%E5%A7%8B%E5%8C%96</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%8F%82%E6%95%B0%E5%88%9D%E5%A7%8B%E5%8C%96/%E9%9A%8F%E6%9C%BA%E5%88%9D%E5%A7%8B%E5%8C%96</guid>
-    <description></description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>网络过拟合</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E7%BD%91%E7%BB%9C%E8%BF%87%E6%8B%9F%E5%90%88</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E7%BD%91%E7%BB%9C%E8%BF%87%E6%8B%9F%E5%90%88</guid>
+    <description>1. 模型复杂度过高 参数过多：模型（如深度神经网络）包含过多参数，导致其具有强大的表达能力，容易记忆训练数据中的噪声和细节，而非学习到泛化性更强的规律。 深度过深：层数过多的网络容易对训练数据形成高方差的拟合，在简单任务中可能过度捕捉局部模式。 2.</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>Adagrad</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%AD%A6%E4%B9%A0%E7%8E%87%E8%B0%83%E6%95%B4/Adagrad</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%AD%A6%E4%B9%A0%E7%8E%87%E8%B0%83%E6%95%B4/Adagrad</guid>
-    <description>原理 Adagrad的核心思想是为每个参数维护一个历史梯度平方和，并基于这个累积值来调整学习率。对于具有较大历史梯度平方和的参数，其学习率会减小；而对于那些历史梯度平方和较小的参数，则允许有较大的学习率。 梯度更新 给定时间步t时的参数\theta_t，在t+1时刻的更新规则如下： \theta_{t+1, i} = \theta_{t, i} - \frac{\eta}{\sqrt{G_{t, ii} + \epsilon}} \cdot g_{t, i} g_{t, i} 表示在第t次迭代时对参数\theta_i计算得到的梯度。 G_t \in \mathbb{R}^{d \times d...</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>N-gram</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E4%BC%A0%E7%BB%9F%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/N-gram</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E4%BC%A0%E7%BB%9F%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/N-gram</guid>
+    <description>N-gram 原理 基本概念 N-gram 是基于统计的语言模型，通过计算文本中连续出现的 n 个词语（token）的联合概率来预测语言序列。其核心假设为 ​马尔可夫假设：当前词的概率仅依赖于前 n-1 个词。 数学表示 对于句子 W = w_1, w_2, ..., w_m，其概率计算为： P(W) = \prod_{i=1}^{m} P(w_i | w_{i-n+1}^{i-1}) ​Unigram (1-gram): P(w_i) ​Bigram (2-gram): P(w_i | w_{i-1}) ​Trigram (3-gram): P(w_i | w_{i-2}, w_{i-1})...</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>Adam</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%AD%A6%E4%B9%A0%E7%8E%87%E8%B0%83%E6%95%B4/Adam</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%AD%A6%E4%B9%A0%E7%8E%87%E8%B0%83%E6%95%B4/Adam</guid>
-    <description>深度学习中的 Adam 笔记 1.</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>ELMo</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E5%8A%A8%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/ELMo</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E5%8A%A8%E6%80%81%E8%AF%8D%E5%B5%8C%E5%85%A5/ELMo</guid>
+    <description>网络结构概述 ELMo 是一种基于双向LSTM的深度上下文词表示模型，核心结构包含字符编码层和多层双向语言模型。其网络结构分为三部分： \text{ELMo}_k = \gamma \sum_{j=0}^L s_j \cdot \mathbf{h}_{k,j} L: 双向LSTM层数 s_j: 可训练的任务特定权重 \gamma: 全局缩放系数 1.</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item><item>
-    <title>AdamW</title>
-    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%AD%A6%E4%B9%A0%E7%8E%87%E8%B0%83%E6%95%B4/AdamW</link>
-    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96/%E5%AD%A6%E4%B9%A0%E7%8E%87%E8%B0%83%E6%95%B4/AdamW</guid>
-    <description>1. 引言 AdamW 是一种对 Adam 算法的改进，主要通过引入 权重衰减（Weight Decay） 解决了 Adam 中存在的正则化问题。AdamW 采用了与传统 SGD 相同的方式进行权重衰减，而不将其包含在梯度更新过程中，这样能够更好地控制正则化，从而改善模型的泛化能力。 2.</description>
-    <pubDate>Wed, 19 Mar 2025 08:51:48 GMT</pubDate>
+    <title>BERT</title>
+    <link>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E7%8E%B0%E4%BB%A3%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/BERT</link>
+    <guid>https://quartz.jzhao.xyz/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E7%8E%B0%E4%BB%A3%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/BERT</guid>
+    <description>背景 ​时间背景：2018年由Google提出，成为NLP领域里程碑式模型。 ​技术背景： 传统词嵌入（如Word2Vec）无法处理一词多义和上下文信息。 预训练模型（如ELMo、GPT）开始兴起，但存在单向上下文限制（如GPT仅用左向上下文）。 Transformer架构（2017）为并行化处理序列提供了新思路。 ​核心目标：通过双向预训练提取深层上下文特征，统一不同NLP任务的微调框架。 网络结构 预训练阶段 输入表示 ​Token Embedding：WordPiece分词，处理未登录词（如“playing”拆分为“play”+“##ing”）。 ​Segment Embedding：区...</description>
+    <pubDate>Wed, 19 Mar 2025 13:37:36 GMT</pubDate>
   </item>
     </channel>
   </rss>
